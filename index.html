@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML FORM</title>
+    <link rel="stylesheet" href="/CSS/styles.css">
+</head>
+
+<body>
+    <div>
+        <p id="description">Create a form Using HTML,CSS and DOM.</p>
+
+        <H1 class="Formdata" id="title">HTML FORM</H1>
+    </div>
+    <form id="form">
+        <div class="form-group">
+            <label for="first-name">First Name:</label>
+            <input type="text" id="first-name" placeholder="FirstName" required>
+
+            <label for="last-name">Last Name:</label>
+            <input type="text" id="last-name" placeholder="LastName" required>
+        </div>
+
+        <div class="form-group">
+            <label for="address">Address:</label>
+            <textarea name="address" id="address" cols="30" rows="10" placeholder="Address"></textarea>
+        </div>
+        <div class="form-group">
+            <label for="pincode">Pin Code:</label>
+            <input type="text" id="pincode" placeholder="Pincode" required>
+        </div>
+
+        <label>Gender:</label>
+        <label><input type="radio" name="gender" value="Male" required> Male</label>
+        <label><input type="radio" name="gender" value="Female" required> Female</label>
+
+        <label>Choice of foods (Select at least 2):</label>
+        <label><input type="checkbox" name="foods" value="IDLY"> IDLY </label>
+        <label><input type="checkbox" name="foods" value="DHOSA"> DHOSA </label>
+        <label><input type="checkbox" name="foods" value="FRIED RICE"> FRIED RICE </label>
+
+        <label for="state">State:</label>
+        <input type="text" id="state" placeholder="state" required>
+
+        <label for="country">Country:</label>
+        <input type="text" id="country" placeholder="country" required>
+
+        <button type="submit" id="submit" class="btn & btn-primary">Submit</button>
+    </form>
+    </div>
+    <div>
+        <caption>
+            <h3>FORM DATAS</h3>
+        </caption>
+        <table class="table" id="dataTable">
+            <thead>
+                <tr>
+                    <th>FirstName</th>
+                    <th>LastName</th>
+                    <th>Address</th>
+                    <th>Gender</th>
+                    <th>Pincode</th>
+                    <th>Choice Of Food </th>
+                    <th>State</th>
+                    <th>Country</th>
+                </tr>
+
+            </thead>
+            <tbody id="dataTableBody">
+            </tbody>
+        </table>
+    </div>
+
+
+    <script src="https://app.zenclass.in/sheets/v1/js/zen/suite/bundle.js"></script>
+    <script src="/js/script.js"></script>
+    </div>
+</body>
+
+</html>
